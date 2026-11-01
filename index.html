@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Lucas Cisterna — Estudante de TI e Desenvolvedor em formação. Foco em desenvolvimento de software e soluções web modernas.">
+  <title>Lucas Cisterna | Estudante de TI & Desenvolvedor em Formação</title>
+
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barra de progresso da rolagem (Scroll Progress) -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header & Menu de Navegação -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Lucas Cisterna - Início">
+        <span class="logo-bracket">[</span>LC<span class="logo-dot">.</span><span class="logo-bracket">]</span>
+      </a>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu de navegação">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Menu Principal -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">
+              <span class="nav-index">01.</span>Início
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">
+              <span class="nav-index">02.</span>Sobre mim
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link">
+              <span class="nav-index">03.</span>Projetos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">
+              <span class="nav-index">04.</span>Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- SEÇÃO 01 — HERO SECTION (PRESERVADA) -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <!-- Grid de fundo decorativo com gradiente e luz sutil -->
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Tag de status tecnológico / contexto -->
+        <div class="hero-badge animate-fade-in" style="--delay: 100ms;">
+          <span class="status-indicator"></span>
+          <span class="badge-text">Estudante de TI | Desenvolvedor em formação</span>
+        </div>
+
+        <!-- Título Principal com nome em destaque -->
+        <h1 class="hero-title animate-fade-in" id="hero-title" style="--delay: 200ms;">
+          Lucas Cisterna
+        </h1>
+
+        <!-- Descrição objetiva e profissional -->
+        <p class="hero-description animate-fade-in" style="--delay: 300ms;">
+          Estudante de Informática focado no desenvolvimento de software e soluções web modernas. Transformando ideias e lógica de programação em interfaces digitais eficientes, funcionais e com design cuidadoso.
+        </p>
+
+        <!-- Ações / Botões com microinterações -->
+        <div class="hero-actions animate-fade-in" style="--delay: 400ms;">
+          <a href="#projetos" class="btn btn-primary">
+            <span class="btn-text">Explorar projetos</span>
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <a href="#contato" class="btn btn-secondary">
+            <span class="btn-text">Entrar em contato</span>
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Detalhes digitais / metadados futuristas discretos -->
+        <div class="hero-meta animate-fade-in" style="--delay: 500ms;" aria-label="Informações complementares">
+          <div class="meta-item">
+            <span class="meta-label">Formação</span>
+            <span class="meta-value">Ensino Médio & Técnico em Informática</span>
+          </div>
+          <div class="meta-separator" aria-hidden="true">/</div>
+          <div class="meta-item">
+            <span class="meta-label">Instituição</span>
+            <span class="meta-value">Colégio Raphael Di Santo</span>
+          </div>
+          <div class="meta-separator" aria-hidden="true">/</div>
+          <div class="meta-item">
+            <span class="meta-label">Foco</span>
+            <span class="meta-value">Aplicações Web & Software</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 02 — SOBRE MIM -->
+    <section class="section-container" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="tag-num">02.</span> Trajetória & Perfil</span>
+          <h2 class="section-heading" id="sobre-title">Sobre mim</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Coluna de Texto e Trajetória -->
+          <div class="about-content reveal-on-scroll">
+            <p class="about-lead">
+              Sou estudante do Ensino Médio integrado ao curso técnico de Informática no <strong>Colégio Raphael Di Santo</strong>, atualmente com <strong>17 anos</strong>.
+            </p>
+            <p class="about-text">
+              Tenho forte interesse em desenvolvimento de software e tecnologia, com foco na criação de aplicações web, construção de interfaces e resolução de problemas por meio da programação.
+            </p>
+            <p class="about-text">
+              Utilizo projetos práticos para desenvolver minhas habilidades, explorar novas ferramentas e transformar ideias em soluções digitais. Meu objetivo é evoluir continuamente como desenvolvedor e construir uma trajetória sólida na área de Tecnologia da Informação.
+            </p>
+
+        <!-- Detalhes do Perfil / Cards Técnicos -->
+            <div class="about-details-cards">
+              <div class="detail-card">
+                <span class="detail-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </span>
+                <div class="detail-info">
+                  <span class="detail-title">Formação Acadêmica</span>
+                  <span class="detail-desc">Ensino Médio integrado ao Técnico em Informática — Colégio Raphael Di Santo</span>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <span class="detail-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </span>
+                <div class="detail-info">
+                  <span class="detail-title">Áreas de Interesse</span>
+                  <span class="detail-desc">Desenvolvimento Web, Construção de Interfaces, Lógica e Software</span>
+                </div>
+              </div>
+
+              <!-- Área de Idiomas -->
+              <div class="detail-card detail-card-languages">
+                <span class="detail-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </span>
+                <div class="detail-info languages-info">
+                  <span class="detail-title">Idiomas</span>
+                  <div class="languages-list">
+                    <div class="language-item">
+                      <div class="language-header">
+                        <span class="language-name">Português</span>
+                        <span class="language-level">Nativo</span>
+                      </div>
+                      <div class="language-indicator" aria-hidden="true">
+                        <span class="indicator-bar filled"></span>
+                        <span class="indicator-bar filled"></span>
+                        <span class="indicator-bar filled"></span>
+                      </div>
+                    </div>
+
+                    <div class="language-item">
+                      <div class="language-header">
+                        <span class="language-name">Inglês</span>
+                        <span class="language-level">Bom domínio</span>
+                      </div>
+                      <div class="language-indicator" aria-hidden="true">
+                        <span class="indicator-bar filled"></span>
+                        <span class="indicator-bar filled"></span>
+                        <span class="indicator-bar subtle"></span>
+                      </div>
+                    </div>
+
+                    <div class="language-item">
+                      <div class="language-header">
+                        <span class="language-name">Espanhol</span>
+                        <span class="language-level">Bom domínio</span>
+                      </div>
+                      <div class="language-indicator" aria-hidden="true">
+                        <span class="indicator-bar filled"></span>
+                        <span class="indicator-bar filled"></span>
+                        <span class="indicator-bar subtle"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Visual / Cartão de Identidade do Desenvolvedor -->
+          <div class="about-profile reveal-on-scroll" style="--reveal-delay: 200ms;">
+            <div class="profile-terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot dot-red"></span>
+                  <span class="terminal-dot dot-yellow"></span>
+                  <span class="terminal-dot dot-green"></span>
+                </div>
+                <span class="terminal-title">lucas_cisterna.profile</span>
+              </div>
+              <div class="terminal-body">
+                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                <div class="code-line indent-1"><span class="code-prop">nome</span>: <span class="code-string">"Lucas Cisterna"</span>,</div>
+                <div class="code-line indent-1"><span class="code-prop">idade</span>: <span class="code-number">17</span>,</div>
+                <div class="code-line indent-1"><span class="code-prop">status</span>: <span class="code-string">"Desenvolvedor em formação"</span>,</div>
+                <div class="code-line indent-1"><span class="code-prop">instituicao</span>: <span class="code-string">"Colégio Raphael Di Santo"</span>,</div>
+                <div class="code-line indent-1"><span class="code-prop">curso</span>: <span class="code-string">"Técnico de Informática"</span>,</div>
+                <div class="code-line indent-1"><span class="code-prop">interesses</span>: [</div>
+                <div class="code-line indent-2"><span class="code-string">"Desenvolvimento Web"</span>,</div>
+                <div class="code-line indent-2"><span class="code-string">"Engenharia de Software"</span>,</div>
+                <div class="code-line indent-2"><span class="code-string">"Resolução de Problemas"</span></div>
+                <div class="code-line indent-1">],</div>
+                <div class="code-line indent-1"><span class="code-prop">focoAtual</span>: <span class="code-string">"Prática contínua & Projetos reais"</span></div>
+                <div class="code-line">};</div>
+              </div>
+              <div class="terminal-footer">
+                <span class="terminal-status-indicator"></span>
+                <span class="terminal-status-text">Pronto para novos desafios e aprendizados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 03 — PROJETOS -->
+    <section class="section-container" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="tag-num">03.</span> Portfólio de Trabalhos</span>
+          <h2 class="section-heading" id="projetos-title">Projetos</h2>
+          <p class="section-subtitle">
+            Aplicações práticas e estudos aplicados desenvolvidos durante minha formação técnica em Informática.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJETO 01: VECTOR RUNNER -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-preview preview-runner">
+              <div class="preview-mockup mockup-runner">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-url">zogo-rds4.vercel.app</span>
+                </div>
+                <div class="mockup-canvas canvas-runner">
+                  <div class="game-scene">
+                    <div class="game-grid-horizon"></div>
+                    <div class="game-runner-avatar" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                    <div class="game-obstacles">
+                      <span class="obs-bar obs-1"></span>
+                      <span class="obs-bar obs-2"></span>
+                      <span class="obs-bar obs-3"></span>
+                    </div>
+                    <div class="game-score-badge">SCORE: 2048</div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-tag-featured">Game 2D</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Games / Desenvolvimento de jogos</span>
+                <span class="project-index">01</span>
+              </div>
+              <h3 class="project-title">Vector Runner</h3>
+              <p class="project-description">
+                Jogo 2D de corrida desenvolvido para navegador, com mecânicas próprias e foco em experiência interativa.
+              </p>
+              <div class="project-links">
+                <a href="https://zogo-rds4.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" aria-label="Visualizar projeto Vector Runner (abre em nova aba)">
+                  <span>Visualizar projeto</span>
+                  <span class="btn-project-arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 02: STREAM HUB PREMIUM -->
+          <article class="project-card reveal-on-scroll" style="--reveal-delay: 150ms;">
+            <div class="project-preview preview-stream">
+              <div class="preview-mockup mockup-stream">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-url">stream-hub-bay.vercel.app</span>
+                </div>
+                <div class="mockup-canvas canvas-stream">
+                  <div class="stream-layout-mini">
+                    <div class="stream-sidebar-mini">
+                      <span class="mini-bar-nav active"></span>
+                      <span class="mini-bar-nav"></span>
+                      <span class="mini-bar-nav"></span>
+                    </div>
+                    <div class="stream-main-mini">
+                      <div class="stream-hero-banner">
+                        <span class="stream-play-btn">▶</span>
+                        <div class="stream-banner-text">
+                          <span class="banner-line-1"></span>
+                          <span class="banner-line-2"></span>
+                        </div>
+                      </div>
+                      <div class="stream-row-cards">
+                        <span class="stream-card-thumb"></span>
+                        <span class="stream-card-thumb"></span>
+                        <span class="stream-card-thumb"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-tag-featured">Streaming UI</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Desenvolvimento Web</span>
+                <span class="project-index">02</span>
+              </div>
+              <h3 class="project-title">Stream Hub Premium</h3>
+              <p class="project-description">
+                Plataforma web voltada à organização e apresentação de conteúdos de entretenimento, com uma experiência visual inspirada em serviços de streaming.
+              </p>
+              <div class="project-links">
+                <a href="https://stream-hub-bay.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" aria-label="Visualizar projeto Stream Hub Premium (abre em nova aba)">
+                  <span>Visualizar projeto</span>
+                  <span class="btn-project-arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 03: FLORÊCAFÊ -->
+          <article class="project-card reveal-on-scroll" style="--reveal-delay: 250ms;">
+            <div class="project-preview preview-cafe">
+              <div class="preview-mockup mockup-cafe">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-url">flor-caf.vercel.app</span>
+                </div>
+                <div class="mockup-canvas canvas-cafe">
+                  <div class="cafe-hero-mini">
+                    <div class="cafe-brand-badge">
+                      <span class="cafe-cup-icon" aria-hidden="true">☕</span>
+                      <span class="cafe-brand-name">Florêcafé</span>
+                    </div>
+                    <div class="cafe-tagline-bars">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="cafe-menu-tags">
+                      <span class="cafe-tag">Flores</span>
+                      <span class="cafe-tag">Cafés</span>
+                      <span class="cafe-tag">Doces</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-tag-featured">Cafeteria Brand</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Web Design / Desenvolvimento Web</span>
+                <span class="project-index">03</span>
+              </div>
+              <h3 class="project-title">Florêcafé</h3>
+              <p class="project-description">
+                Website desenvolvido para uma marca de cafeteria, com foco em identidade visual e apresentação digital.
+              </p>
+              <div class="project-links">
+                <a href="https://flor-caf.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" aria-label="Visualizar projeto Florêcafé (abre em nova aba)">
+                  <span>Visualizar projeto</span>
+                  <span class="btn-project-arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 04 — CONTATO -->
+    <section class="section-container" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="tag-num">04.</span> Conexão & Mensagens</span>
+          <h2 class="section-heading" id="contato-title">Entre em contato</h2>
+          <p class="section-subtitle">
+            Tem alguma oportunidade, dúvida ou quer conversar sobre tecnologia? Envie uma mensagem diretamente ou conecte-se pelos canais oficiais.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Coluna com Canais Oficiais -->
+          <div class="contact-channels reveal-on-scroll">
+            <h3 class="channels-title">Canais Oficiais</h3>
+            <p class="channels-desc">
+              Você pode me contatar diretamente por e-mail ou acompanhar meu perfil no Instagram.
+            </p>
+
+            <div class="channel-card">
+              <div class="channel-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">E-mail Direto</span>
+                <a href="mailto:lucascist2009@gmail.com" class="channel-value" id="email-address">lucascist2009@gmail.com</a>
+              </div>
+              <button type="button" class="btn-copy-email" id="btn-copy-email" aria-label="Copiar endereço de e-mail">
+                <span class="copy-text">Copiar</span>
+                <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Rede Social</span>
+                <span class="channel-value">@lucas_cisterna_</span>
+              </div>
+              <a href="https://www.instagram.com/lucas_cisterna_/" target="_blank" rel="noopener noreferrer" class="btn-channel-link" aria-label="Acessar Instagram de Lucas Cisterna (abre em nova aba)">
+                <span>Acessar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div class="contact-notice">
+              <span class="notice-icon" aria-hidden="true">ℹ</span>
+              <p class="notice-text">
+                <strong>Nota sobre contato:</strong> O canal de WhatsApp não foi informado até o momento. Por favor utilize o e-mail ou Instagram oficiais acima.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coluna com Formulário de Mensagem -->
+          <div class="contact-form-wrapper reveal-on-scroll" style="--reveal-delay: 200ms;">
+            <form id="contact-form" class="contact-form" novalidate>
+              <h3 class="form-title">Enviar uma Mensagem</h3>
+              
+              <!-- Campo: Nome -->
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">Seu Nome <span class="required-mark">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="Ex: Maria Oliveira" required minlength="2">
+                  <span class="input-indicator" aria-hidden="true"></span>
+                </div>
+                <span class="form-error" id="error-name" role="alert"></span>
+              </div>
+
+              <!-- Campo: E-mail -->
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">Seu E-mail <span class="required-mark">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="Ex: maria@exemplo.com" required>
+                  <span class="input-indicator" aria-hidden="true"></span>
+                </div>
+                <span class="form-error" id="error-email" role="alert"></span>
+              </div>
+
+              <!-- Campo: Mensagem -->
+              <div class="form-group" id="group-message">
+                <label for="contact-message" class="form-label">Mensagem <span class="required-mark">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Escreva sua mensagem aqui..." required minlength="10"></textarea>
+                  <span class="input-indicator" aria-hidden="true"></span>
+                </div>
+                <span class="form-error" id="error-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span class="btn-text">Enviar Mensagem</span>
+                <span class="btn-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </span>
+              </button>
+
+              <!-- Caixa de Feedback Transparente do Formulário -->
+              <div class="form-feedback-box" id="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé do Portfólio -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo" aria-label="Lucas Cisterna - Topo">
+          <span class="logo-bracket">[</span>LC<span class="logo-dot">.</span><span class="logo-bracket">]</span>
+        </a>
+        <p class="footer-tagline">Lucas Cisterna &mdash; Estudante de TI & Desenvolvedor em formação</p>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">&copy; 2026 Lucas Cisterna. Desenvolvido com HTML, CSS e JavaScript puros.</p>
+        <p class="col-text">Colégio Raphael Di Santo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de Notificação (Ex: Copiado com sucesso) -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-icon" aria-hidden="true">✓</span>
+    <span class="toast-message" id="toast-message">E-mail copiado para a área de transferência!</span>
+  </div>
+
+  <!-- Script de Interações -->
+  <script src="js/script.js"></script>
+</body>
+</html>

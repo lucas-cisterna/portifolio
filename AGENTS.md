@@ -1,0 +1,23 @@
+# Regras do projeto
+
+- Este projeto é um portfólio pessoal de Lucas Cisterna, desenvolvido com HTML, CSS e JavaScript puro, sem frameworks.
+- Antes de criar ou alterar qualquer arquivo, leia integralmente `referencias.md`, `identidade.md` e `funcionalidades.md`.
+- Respeite a identidade visual definida em `identidade.md` e use `referencias.md` como inspiração, nunca como modelo para copiar.
+- A direção escolhida é HÍBRIDA: tecnológico futurista + minimalista premium + creative developer. Equilibre os três; não transforme o site em uma coleção de efeitos.
+- Não copie código, textos, imagens, marcas ou elementos exclusivos dos sites de referência.
+- Mantenha o código organizado na seguinte estrutura:
+  - `index.html` — estrutura e conteúdo das páginas/seções.
+  - `css/style.css` — estilos, responsividade e animações.
+  - `js/script.js` — interações e funcionalidades.
+- Use HTML semântico, CSS organizado e JavaScript legível. Evite dependências desnecessárias.
+- O site deve ser responsivo e funcionar bem em celulares, tablets e computadores.
+- Priorize acessibilidade: contraste adequado, navegação por teclado, foco visível, textos alternativos e respeito à preferência `prefers-reduced-motion`.
+- Não invente informações pessoais, experiências profissionais, certificações, clientes, resultados ou habilidades que não estejam confirmadas.
+- Não invente número ou link de WhatsApp. O contato deve usar o e-mail e Instagram informados.
+- Não publique dados pessoais além dos que estão autorizados em `identidade.md`.
+- Todos os botões, links, menus e controles apresentados devem funcionar. Não crie elementos decorativos que pareçam clicáveis.
+- Otimize imagens, animações e scripts para evitar lentidão. Não use efeitos pesados que prejudiquem o desempenho em celulares.
+- Implemente as funcionalidades uma por vez, na ordem definida em `funcionalidades.md`. Depois de cada etapa, teste o que já existia para evitar regressões.
+- Não refaça a estrutura ou remova funcionalidades já aprovadas sem necessidade e sem explicar a mudança.
+- Ao terminar cada etapa, informe em até 2 linhas o que foi implementado e quais arquivos foram alterados.
+- Antes de concluir, revise links, formulário, navegação, responsividade, console do navegador e estados de interação.
